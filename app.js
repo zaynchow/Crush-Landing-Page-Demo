@@ -5,17 +5,15 @@ function imgSlider(img) {
 function changeBgColor(color) {
     const sec = document.querySelector('.sec');
     sec.style.background = color;
-    console.log(sec);
 }
 
 
 document.addEventListener("click", (e) => {
     const source = e.target.src.split('/');
-    console.log(source[4]);
     switch (source[4]) {
         case 'crush%20orange.png': {
             imgSlider('./img/crush orange.png');
-            changeBgColor('orange');
+            changeBgColor('linear-gradient(to right, #fa709a 0%, #fee140 100%)');
             break;
         }
         case 'crush%20strawberry.png': {
